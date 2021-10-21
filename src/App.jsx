@@ -18,8 +18,8 @@ export default function App() {
     update: defaultValues.slice()
   });
 
-  const onUpdate = (update) => setState({ update });
-  const onChange = (values) => setState({ values });
+  const onUpdate = (update) => setState({ ...state, update });
+  const onChange = (values) => setState({ ...state, values });
 
   return (
     <div style={{ height: 120, width: "100%" }}>
